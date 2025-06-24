@@ -107,20 +107,16 @@ curl -X POST http://localhost:3000/todo \
   -H "token: YOUR_JWT_TOKEN" \
   -d '{"title":"My first todo"}'
 ```
-
-## 📈 Test Coverage
-
-After running tests, view coverage report:
-- Open `coverage/lcov-report/index.html` in browser
-- Or check console output for coverage summary
-
 ---
-## ScreenShots
-UNIT : 
+## Screenshots ->
+## UNIT : 
 ![image](https://github.com/user-attachments/assets/7bbfef79-85ea-4548-b794-eee9506ee3fa)
-INTEGRATION : 
+
+
+## INTEGRATION : 
 ![image](https://github.com/user-attachments/assets/9fe0cef0-1f95-4eaa-8330-6845517c9ff5)
-API :
+
+## API :
 ![image](https://github.com/user-attachments/assets/4cbebf07-f931-4988-a12d-fdb71341558e)
 
 
