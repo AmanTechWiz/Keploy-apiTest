@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c3ba767c-10e3-450c-a4a1-bfafb47ca555)# Todo API with Comprehensive Testing
+# Todo API with Comprehensive Testing
 
 A RESTful Todo API with JWT authentication, built with Node.js and MongoDB. Features complete unit, integration, and API tests with 70%+ code coverage.
 
