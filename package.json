@@ -3,7 +3,12 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:coverage": "jest --coverage",
+      "test:unit": "jest --testPathPattern=unit",
+      "test:integration": "jest --testPathPattern=integration",
+      "test:api": "jest --testPathPattern=api"
     },
     "keywords": [],
     "author": "",
@@ -15,6 +20,33 @@
       "jsonwebtoken": "^9.0.2",
       "mongoose": "^8.15.0",
       "zod": "^3.25.28"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "supertest": "^7.0.0",
+      "mongodb-memory-server": "^9.1.6",
+      "@types/jest": "^29.5.11"
+    },
+    "jest": {
+      "testEnvironment": "node",
+      "maxWorkers": 1,
+      "forceExit": true,
+      "detectOpenHandles": true,
+      "collectCoverageFrom": [
+        "*.js",
+        "!node_modules/**",
+        "!coverage/**",
+        "!run-tests.js"
+      ],
+      "coverageReporters": ["text", "lcov", "html"],
+      "coverageThreshold": {
+        "global": {
+          "branches": 70,
+          "functions": 70,
+          "lines": 70,
+          "statements": 70
+        }
+      }
     }
   }
   

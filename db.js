@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const objectid = mongoose.ObjectId;
-// url for db -> mongoose.connect("");
+mongoose.connect("mongodb+srv://amantechwiz:AmanTechWiz123@mycloud.4n3saul.mongodb.net/");
 
 const User = new Schema({
     username: { type: String, unique: true },
